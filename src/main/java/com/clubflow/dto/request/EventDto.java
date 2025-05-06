@@ -27,4 +27,8 @@ public class EventDto {
 
     @NotBlank(message = "Location is required")
     private String location;
+
+    public EventDto(String title, String desc, String workshop, String techClub, String date, String time, String roomA) {
+
+    }
 }

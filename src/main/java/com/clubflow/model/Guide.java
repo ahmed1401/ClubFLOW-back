@@ -42,4 +42,6 @@ public class Guide {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+
 }

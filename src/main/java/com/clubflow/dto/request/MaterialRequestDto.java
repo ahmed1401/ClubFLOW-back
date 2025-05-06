@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Data
 public class MaterialRequestDto {
 
@@ -23,4 +25,8 @@ public class MaterialRequestDto {
 
     @NotBlank(message = "Reason is required")
     private String reason;
+
+    public MaterialRequestDto(String techClub, String projector, int i, LocalDate now, String presentationNeeds) {
+
+    }
 }
