@@ -33,6 +33,9 @@ public class MemberDto {
     private String address;
 
     private String link;
+    private String password;
+    private String confirmPassword;
+
 
     public MemberDto(String ahmed, String hajje, String mail, String number, String image, String techClub, String president, String date, String tunis, String s) {
 

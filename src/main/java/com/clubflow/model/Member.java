@@ -45,6 +45,9 @@ public class Member {
 
     private String link;
 
+    private String password;
+    private String confirmPassword;
+
     @CreationTimestamp
     private LocalDateTime createdAt;
 

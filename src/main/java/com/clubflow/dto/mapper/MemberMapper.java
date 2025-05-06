@@ -14,6 +14,9 @@ public interface MemberMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "password", ignore = true)
+    @Mapping(target = "confirmPassword", ignore = true)
+
     Member toEntity(MemberDto memberDto);
 
     MemberDto toDto(Member member);

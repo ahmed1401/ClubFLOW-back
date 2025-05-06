@@ -50,7 +50,7 @@ public class UserService {
     }
 
     @Transactional
-    public User createUser(UserDto userDto) {
+    public  User createUser(UserDto userDto) {
         if (userRepository.existsByEmail(userDto.getEmail())) {
             logger.error("Email is already taken: {}", userDto.getEmail());
             throw new RuntimeException("Email is already taken!");
